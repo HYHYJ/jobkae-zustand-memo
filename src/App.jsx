@@ -4,6 +4,7 @@ import MemoBoard from "./components/MemoBoard";
 import { useMemoStore } from "./store/MemoList";
 
 const App = () => {
+  //useMemoStore에서  memoList를 불러오기
   const { memoList } = useMemoStore();
   return (
     <>

@@ -1,7 +1,9 @@
 import { create } from "zustand";
 
+// 객체를 리턴하는
 export const useMemoStore = create((set) => ({
   memoList: [],
+  //액션함수는 set함수를 받아서 return
   addMemo: (val) =>
     set((prev) => ({
       memoList: [

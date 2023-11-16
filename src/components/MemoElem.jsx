@@ -3,11 +3,13 @@ import { useMemoStore } from "../store/MemoList";
 
 const MemoElem = (props) => {
   const { children, id } = props;
+    //zustand 불러오기
   const { removeMemo } = useMemoStore();
 
   return (
     <MemoWrapper>
       <div>{children}</div>
+      {/* //zustand 불러온 함수쓰기 */}
       <RemoveButton onClick={() => removeMemo(id)}>삭제</RemoveButton>
     </MemoWrapper>
   );
